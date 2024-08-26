@@ -1,1 +1,166 @@
 @import "./global.css";
+
+/* .dark-mode {
+  --header-bg: #20222f;
+  --body-bg: #1d1f29;
+  --black-color: #ffffff;
+  --slate-color: #8c98c6;
+  --card-bg: #252b42;
+  --toggle-bg: #40db82;
+  --slate-color-light: #ffffff;
+} */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10rem 0;
+  background-color: var(--header-bg);
+}
+
+.avatar {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 10rem;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-me h2 {
+  color: var(--black-color);
+  font-size: 3.6rem;
+  letter-spacing: 0.5px;
+}
+
+.about-me p {
+  color: var(--slate-color);
+  font-size: 1.4rem;
+  padding: 0.7rem 0;
+  font-weight: 700;
+}
+
+.about-me span {
+  color: var(--slate-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.header-theme-toggle {
+  color: var(--slate-color-light);
+  display: flex;
+  align-items: center;
+  column-gap: 13px;
+}
+
+.button {
+  background-color: var(--toggle-bg);
+  width: 4.8rem;
+  height: 2.4rem;
+  border-radius: 20rem;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+
+.button::before {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 20rem;
+}
+
+input:checked + .button {
+  background-color: #ed5306;
+}
+
+input:checked + .button::before {
+  transform: translateX(2.4rem);
+}
+
+input {
+  display: none;
+}
+
+.projects-card-all {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--card-bg);
+  max-width: 25.5rem;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.project-card h2 {
+  font-size: 3.5rem;
+  letter-spacing: -1px;
+  color: var(--black-color);
+}
+
+.project-card p {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--green-color);
+}
+
+.najot-talim,
+.homework {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2px;
+}
+
+.project-card-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--slate-color);
+  column-gap: 8px;
+  padding: 3.2rem 0 2.8rem 0;
+}
+
+.project-card-up span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--slate-color);
+}
+
+.project-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  padding: 2.5rem 0;
+  color: var(--slate-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.blue {
+  border-top: 4px solid #178ff5;
+}
+
+.green {
+  border-top: 4px solid rgb(71, 229, 71);
+}
+
+.orange {
+  border-top: 4px solid orange;
+}
+
+.red {
+  border-top: 4px solid red;
+}
