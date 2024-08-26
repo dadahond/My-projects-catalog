@@ -90,6 +90,8 @@ input {
 .projects-card-all {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
   margin-top: 10rem;
 }
 
