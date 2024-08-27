@@ -197,6 +197,44 @@ input {
   border-top: 4px solid red;
 }
 
+/* ---------customer scrollbal */
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(96, 97, 97, 0.333);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#f24f0f, #0b9df2);
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 830px) {
+  .project-card {
+    max-width: 30rem;
+    width: 100%;
+    text-align: center;
+  }
+  .my-project {
+    text-align: center;
+    font-size: 4.5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me {
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .navigation {
     display: flex;
@@ -210,6 +248,14 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project-card {
+    max-width: 35rem;
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -244,19 +290,4 @@ input {
     font-size: 4.5rem;
     margin-top: 1rem;
   }
-}
-
-/* ---------customer scrollbal */
-
-::-webkit-scrollbar {
-  width: 1rem;
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(96, 97, 97, 0.333);
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(#f24f0f, #0b9df2);
-  border-radius: 8px;
 }
