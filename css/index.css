@@ -90,12 +90,20 @@ input {
   display: none;
 }
 
+.my-project {
+  font-size: 5.5rem;
+  letter-spacing: 5px;
+  color: var(--black-color);
+  margin-top: 8rem;
+  opacity: 0.7;
+}
+
 .projects-card-all {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 10rem;
+  margin-top: 3rem;
   padding-bottom: 10rem;
 }
 
@@ -104,14 +112,14 @@ input {
   flex-direction: column;
   align-items: center;
   background-color: var(--card-bg);
-  max-width: 25.5rem;
+  max-width: 35rem;
   width: 100%;
   text-align: center;
   border-radius: 8px;
 }
 
 .project-card .vercel-link {
-  font-size: 3.5rem;
+  font-size: 4rem;
   letter-spacing: -1px;
   color: var(--black-color);
   cursor: pointer;
@@ -123,6 +131,8 @@ input {
 
 .vercel-link:hover {
   color: var(--green-color);
+  font-size: 5rem;
+  letter-spacing: 1px;
 }
 
 .github-link {
@@ -130,10 +140,11 @@ input {
   letter-spacing: 5px;
   color: var(--green-color);
   transition: 0.3s;
+  font-size: 1.5rem;
 }
 
 .github-link:hover {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -208,6 +219,7 @@ input {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    margin-top: 0;
   }
   .my-info {
     display: flex;
@@ -224,5 +236,27 @@ input {
   .header-theme-toggle {
     display: flex;
     justify-content: center;
+    padding-top: 2rem;
+    opacity: 0.7;
   }
+  .my-project {
+    text-align: center;
+    font-size: 4.5rem;
+    margin-top: 1rem;
+  }
+}
+
+/* ---------customer scrollbal */
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(96, 97, 97, 0.333);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#f24f0f, #0b9df2);
+  border-radius: 8px;
 }
