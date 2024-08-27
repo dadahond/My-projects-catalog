@@ -1,6 +1,5 @@
 @import "./global.css";
-
-/* .dark-mode {
+.dark-mode {
   --header-bg: #20222f;
   --body-bg: #1d1f29;
   --black-color: #ffffff;
@@ -8,7 +7,11 @@
   --card-bg: #252b42;
   --toggle-bg: #40db82;
   --slate-color-light: #ffffff;
-} */
+}
+
+body {
+  background-color: var(--body-bg);
+}
 
 .navigation {
   display: flex;
@@ -93,6 +96,7 @@ input {
   gap: 2rem;
   flex-wrap: wrap;
   margin-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .project-card {
@@ -106,16 +110,31 @@ input {
   border-radius: 8px;
 }
 
-.project-card h2 {
+.project-card .vercel-link {
   font-size: 3.5rem;
   letter-spacing: -1px;
   color: var(--black-color);
+  cursor: pointer;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  transition: 0.3s;
 }
 
-.project-card p {
+.vercel-link:hover {
+  color: var(--green-color);
+}
+
+.github-link {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: var(--green-color);
+  transition: 0.3s;
+}
+
+.github-link:hover {
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
 .najot-talim,
@@ -165,4 +184,45 @@ input {
 
 .red {
   border-top: 4px solid red;
+}
+
+@media screen and (max-width: 650px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .my-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .my-info h2,
+  .my-info p {
+    text-align: center;
+  }
+  .my-info span {
+    text-align: center;
+  }
+  .header-theme-toggle {
+    display: flex;
+    justify-content: center;
+  }
 }
