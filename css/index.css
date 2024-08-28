@@ -291,3 +291,16 @@ input {
     margin-top: 1rem;
   }
 }
+
+/* PAge loading */
+
+#preloader {
+  background: #1a1a1a url(../images/loader-black.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
